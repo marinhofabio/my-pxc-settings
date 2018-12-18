@@ -1,0 +1,13 @@
+[Unit]
+Description=Mounting a memory filesystem to handle mysql temporary tables
+Before=mysql.service
+After=network.target
+
+[Mount]
+What=tmpfs
+Where=/tmp/mysql
+Type=tmpfs
+Options=rw,size=8G,nr_inodes=5k,noexec,nodev,nosuid,uid=mysql,gid=mysql,mode=1700 0 0
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,67 @@
+[mysqld]
+
+  ## GENERAL SETTINGS ##
+  skip_name_resolve
+  default_storage_engine           = InnoDB
+  bind-address                     = 192.168.10.15
+  server-id                        = 15
+  user                             = mysql
+  datadir                          = /var/lib/mysql
+  tmpdir                           = /dev/shm
+    
+  ### BINARY LOGGING ###
+  log_bin
+  log-bin                          = pxcnode05-bin
+  binlog_format                    = ROW
+  expire_logs_days                 = 14
+    
+  ### THREAD SETTINGS ###
+  thread_pool_size                 = 48
+  thread_concurrency               = 48
+  thread_cache_size                = 48                                                        
+
+  ### LIMITS ###
+  max-allowed-packet               = 16M
+  max-connect-errors               = 10240
+  max-connections                  = 50000
+  
+  ### PERFORMANCE SETTINGS ###
+  sort_buffer_size                 = 256M
+  read_buffer_size                 = 256M
+  read_rnd_buffer_size	           = 256M
+  join_buffer_size                 = 128M
+
+  ### QUERY CACHE SETTINGS ###
+  query_cache_type                 = 0
+
+  ### WSREP SETTINGS ###
+  wsrep_cluster_address            = gcomm://192.168.10.11,192.168.10.12,192.168.10.13,192.168.10.14,192.168.10.15
+  wsrep_provider                   = /usr/lib64/galera3/libgalera_smm.so
+  wsrep_slave_threads              = 192
+  wsrep_cluster_name               = pxc01
+  wsrep_node_name                  = pxcnode05
+  wsrep_node_address               = 192.168.10.15
+  wsrep_sst_auth                   = "fmarinho:4l3x1st3x4s"
+  wsrep_sst_method                 = xtrabackup-v2
+  wsrep_forced_binlog_format       = ROW
+  wsrep_provider_options           = "gcache.size=4G;"
+  wsrep_sync_wait                  = 1
+  wsrep_log_conflicts              = ON
+  wsrep_retry_autocommit           = 1
+
+  ### INNODB SETTINGS ###
+  innodb_locks_unsafe_for_binlog   = 1
+  innodb_autoinc_lock_mode         = 2
+  innodb_buffer_pool_size          = 16G
+  innodb_buffer_pool_instances     = 16
+  innodb_flush_log_at_trx_commit   = 2
+  innodb_flush_method              = O_DIRECT
+  innodb_log_files_in_group        = 4
+  innodb_log_file_size             = 256M
+  innodb_file_per_table            = 1
+  innodb_locks_unsafe_for_binlog   = 1
+  innodb_doublewrite               = 0
+  innodb_support_xa                = 0
+  
+[mysqld_safe]
+  pid-file                         = /run/mysqld/mysql.pid
