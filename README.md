@@ -1,4 +1,16 @@
-#### What is Percona XtraDB Cluster
+#### What is Percona Server for MySQL®
+Percona Server for MySQL® is a free, fully compatible, enhanced and open source drop-in replacement for any MySQL database. It provides superior performance, scalability and instrumentation.
+
+#### Percona Server for MySQL provides:
+* Faster and more consistently run queries;
+* Enhanced security with binary log (binlog) encryption and data-at-rest encryption;
+* Improved efficiency with server consolidation;
+* Delayed or completely avoided sharding;
+* Better ROI through lower hosting fees and power usage;
+* Percona Server for MySQL;
+* Cloud-ready support;
+
+#### What is Percona XtraDB Cluster?
 Percona XtraDB Cluster is an open source, cost-effective, and robust MySQL® clustering solution for businesses.
 
 #### Percona XtraDB Cluster provides the following MySQL cluster advantages:
