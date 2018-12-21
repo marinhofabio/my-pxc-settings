@@ -3,16 +3,16 @@ Percona XtraDB Cluster is an open source, cost-effective, and robust MySQL® clu
 
 ### Percona XtraDB Cluster provides the following MySQL cluster advantages:
 
-Cost-effective HA and scalability for MySQL
-Higher availability
-ProxySQL load balancer
-Multi-master replication
-Increased read/write scalability
-Zero data Loss
-ProxySQL-assisted Percona XtraDB Cluster maintenance mode
-Automatic node provisioning
-Percona XtraDB Cluster "strict-mode"
-Percona Monitoring and Management compatibility
+* Cost-effective HA and scalability for MySQL;
+* Higher availability;
+* ProxySQL load balancer;
+* Multi-master replication;
+* Increased read/write scalability;
+* Zero data Loss;
+* ProxySQL-assisted Percona XtraDB Cluster maintenance mode;
+* Automatic node provisioning;
+* Percona XtraDB Cluster "strict-mode";
+* Percona Monitoring and Management compatibility;
 
 ### my-pxc-settings
 
