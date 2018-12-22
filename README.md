@@ -42,10 +42,9 @@ I am able to handle 50.000 concurrent connections on each node and the total tha
 
 I'm running this cluster on 5 Dell PowerEdge m630 servers with 48cpu + 128GB of memory.
 
-
-#### References 
-https://www.percona.com/software/mysql-database/percona-server
-https://www.percona.com/software/mysql-database/percona-xtradb-cluster
-http://galeracluster.com/products/
-https://www.idera.com/productssolutions/sql-diagnostic-manager-for-mysql
-https://www.webyog.com/
+#### Useful resources 
+* https://www.percona.com/software/mysql-database/percona-server
+* https://www.percona.com/software/mysql-database/percona-xtradb-cluster
+* http://galeracluster.com/products/
+* https://www.idera.com/productssolutions/sql-diagnostic-manager-for-mysql
+* https://www.webyog.com/
