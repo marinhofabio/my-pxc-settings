@@ -11,11 +11,11 @@
   pid-file                         = /var/run/mysqld/mysqld.pid
 
   ## GENERAL LOGGING ##
-  log-error                        = /var/log/mysql/pxcnode01-error.log
+  log-error                        = /var/log/mysql/pxcnode02-error.log
   general_log                      = OFF
-  general_log_file                 = /var/log/mysql/pxcnode01-general.log
+  general_log_file                 = /var/log/mysql/pxcnode02-general.log
   slow_query_log                   = ON
-  slow_query_log_file              = /var/log/mysql/pxcnode01-slow.log
+  slow_query_log_file              = /var/log/mysql/pxcnode02-slow.log
   long_query_time                  = 5
   
   ## SECURITY SETTINGS ##
