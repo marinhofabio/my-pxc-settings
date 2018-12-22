@@ -5,7 +5,7 @@
   gather_facts: false
   tasks:
    - name: INSTALLING PERCONA REPO
-     command: yum install http://www.percona.com/downloads/percona-release/redhat/0.1-6/percona-release-0.1-6.noarch.rpm
+     command: yum -y install http://www.percona.com/downloads/percona-release/redhat/0.1-6/percona-release-0.1-6.noarch.rpm
    - name: INSTALLING PERCONA PACKAGES AND DEPENDENCIES
      yum:
        name:
