@@ -7,7 +7,6 @@ Percona Server for MySQL® is a free, fully compatible, enhanced and open source
 * Improved efficiency with server consolidation;
 * Delayed or completely avoided sharding;
 * Better ROI through lower hosting fees and power usage;
-* Percona Server for MySQL;
 * Cloud-ready support;
 
 #### What is Percona XtraDB Cluster?
@@ -26,7 +25,7 @@ Percona XtraDB Cluster is an open source, cost-effective, and robust MySQL® clu
 * Percona Monitoring and Management compatibility;
 * True Multi-master, Active-Active Cluster, Read and write to any node at any time;
 * Synchronous Replication, No slave lag, no data is lost at node crash;
-* Tightly Coupled All nodes hold the same state. No diverged data between nodes allowed;
+* Tightly Coupled. All nodes hold the same state. No diverged data between nodes allowed;
 * Multi-threaded Slave For better performance. For any workload;
 * No Master-Slave Failover Operations or Use of VIP;
 * Hot Standby, No downtime during failover (since there is no failover);
@@ -44,3 +43,9 @@ I am able to handle 50.000 concurrent connections on each node and the total tha
 I'm running this cluster on 5 Dell PowerEdge m630 servers with 48cpu + 128GB of memory.
 
 
+#### References 
+https://www.percona.com/software/mysql-database/percona-server
+https://www.percona.com/software/mysql-database/percona-xtradb-cluster
+http://galeracluster.com/products/
+https://www.idera.com/productssolutions/sql-diagnostic-manager-for-mysql
+https://www.webyog.com/
