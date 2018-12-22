@@ -1,0 +1,24 @@
+- hosts: pxc-nodes
+  user: fmarinho
+  become: yes
+  connection: ssh
+  gather_facts: false
+  tasks:
+   - name: INSTALLING PERCONA REPO
+     command: yum install http://www.percona.com/downloads/percona-release/redhat/0.1-6/percona-release-0.1-6.noarch.rpm
+   - name: INSTALLING PERCONA PACKAGES AND DEPENDENCIES
+     yum:
+       name:
+       - 'Percona-XtraDB-Cluster-56'
+       - 'Percona-XtraDB-Cluster-client-56'
+       - 'Percona-XtraDB-Cluster-devel-56'
+       - 'Percona-XtraDB-Cluster-server-56'
+       - 'Percona-XtraDB-Cluster-shared-56'
+       - 'Percona-XtraDB-Cluster-test-56'
+       state: present
+   - name: ENSURE THAT THE SERVICE IS RUNNING AFTER INSTALLATION
+     service:
+       name:  mysql
+       state: started
+   - name: ENABLE MYSQL SERVICE TO BE LOADED AT BOOT
+     command: systemctl enable mysql
