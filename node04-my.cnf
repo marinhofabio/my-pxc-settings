@@ -11,6 +11,12 @@
   pid-file                         = /var/run/mysqld/mysqld.pid
 
   ## GENERAL LOGGING ##
+  log-error                        = /var/log/mysql/pxcnode04-error.log
+  general_log                      = OFF
+  general_log_file                 = /var/log/mysql/pxcnode04-general.log
+  slow_query_log                   = ON
+  slow_query_log_file              = /var/log/mysql/pxcnode04-slow.log
+  long_query_time                  = 5
   
   ## SECURITY SETTINGS ##
   symbolic-links                   = 0
@@ -20,13 +26,27 @@
   log-bin                          = pxcnode04-bin
   binlog_format                    = ROW
   expire_logs_days                 = 14
+  sync_binlog                      = 1
     
+  ## TIMEOUT ##
+  connect_timeout                  = 60
+  interactive_timeout              = 300
+  lock_wait_timeout                = 300
+  net_read_timeout                 = 60
+  net_write_timeout                = 60
+  net_retry_count                  = 5
+  wait_timeout                     = 300
+
   ## THREAD SETTINGS ##
+  thread_handling                  = pool-of-threads
   thread_pool_size                 = 48
   thread_concurrency               = 48
   thread_cache_size                = 48                                                        
 
   ## LIMITS ##
+  table_open_cache                 = 10240
+  max_tmp_tables                   = 32M
+  max_heap_table_size              = 67108864
   max-allowed-packet               = 16M
   max-connect-errors               = 10240
   max-connections                  = 50000
@@ -53,7 +73,7 @@
   wsrep_provider_options           = "gcache.size=4G;"
   wsrep_sync_wait                  = 1
   wsrep_log_conflicts              = ON
-  wsrep_retry_autocommit           = 1
+  wsrep_retry_autocommit           = 5
 
   ## INNODB SETTINGS ##
   innodb_locks_unsafe_for_binlog   = 1
@@ -70,7 +90,7 @@
   innodb_support_xa                = 0
 
 [mysqld_safe]
-
+  
   pid-file                         = /var/run/mysqld/mysqld.pid
   socket                           = /var/lib/mysql/mysql.sock
   nice                             = 0
