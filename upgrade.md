@@ -181,9 +181,10 @@ show variables like ‘%wsrep%’;
 ```
 
 Os parâmetros importantes aqui são os seguintes:
-**wsrep_local_state_comment**
-**wsrep_incoming_addresses** 
-**wsrep_cluster_conf_id **
+
+*wsrep_local_state_comment*
+*wsrep_incoming_addresses* 
+*wsrep_cluster_conf_id*
 
 ```
 mysql> show status like 'wsrep%';
