@@ -18,7 +18,7 @@
 # systemctl reboot
 ```
 
-gsatsrv12.globoi.com
+#### gsatsrv12.globoi.com ####
 
 ```
 # yum check-update
@@ -40,7 +40,7 @@ gsatsrv12.globoi.com
 # systemctl reboot
 ```
 
-gsatsrv11.globoi.com
+#### gsatsrv11.globoi.com ####
 
 ```
 # yum check-update
@@ -62,7 +62,7 @@ gsatsrv11.globoi.com
 # systemctl reboot
 ```
 
-gsatsrv11.globoi.com
+#### gsatsrv11.globoi.com ####
 
 ```
 # dmesg
@@ -96,7 +96,7 @@ gsatsrv11.globoi.com
 # ps ax | grep -i mysql
 ```
 
-gsatsrv12.globoi.com
+#### gsatsrv12.globoi.com ####
 
 ```
 # dmesg
@@ -130,7 +130,7 @@ gsatsrv12.globoi.com
 # ps ax | grep -i mysql
 ```
 
-gsatsrv13.globoi.com
+#### gsatsrv13.globoi.com ####
 
 ```
 # dmesg
