@@ -193,7 +193,7 @@ mysql> show status like 'wsrep%';
 +------------------------------+-------------------------------------------------------+
 | wsrep_local_state_uuid       | 51c60d63-4e89-11e6-8353-42c2375b74c3                  |
 | wsrep_last_committed         | 911397980                                             |
-| wsrep_local_state_comment    | Synced                                                
+| wsrep_local_state_comment    | Synced                                                |
 | wsrep_incoming_addresses     | 10.129.96.11:3306,10.129.96.12:3306,10.129.96.13:3306 |
 | wsrep_evs_state              | OPERATIONAL                                           |
 | wsrep_gcomm_uuid             | 54cf4ddf-3746-11e8-a3cf-1f284a7d9411                  |
