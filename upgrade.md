@@ -1,7 +1,7 @@
 #### gsatsrv13.globoi.com ####
-```´
+````
 # yum check-update
-```
+````
 
 ```
 # rpm -qa | grep -i percona | sort
