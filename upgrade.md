@@ -1,4 +1,4 @@
-gsatsrv13.globoi.com
+#### gsatsrv13.globoi.com ####
 ```´
 # yum check-update
 ```
