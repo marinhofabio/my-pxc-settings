@@ -1,103 +1,178 @@
 gsatsrv13.globoi.com
-
+```´
 # yum check-update
+```
 
+```
 # rpm -qa | grep -i percona | sort
-
+```
+```
 # systemctl stop mysql
+```
 
+```
 # yum -y update
+```
 
+```
 # systemctl reboot
+```
 
 gsatsrv12.globoi.com
 
+```
 # yum check-update
+```
 
+```
 # rpm -qa | grep -i percona | sort
+```
 
+```
 # systemctl stop mysql
+```
 
+```
 # yum -y update
+```
 
+```
 # systemctl reboot
+```
 
 gsatsrv11.globoi.com
 
+```
 # yum check-update
+```
 
+```
 # rpm -qa | grep -i percona | sort
+```
 
+```
 # systemctl stop mysql@bootstrap.service
+```
 
+```
 # yum -y update
+```
 
+```
 # systemctl reboot
-
-
-
+```
 
 gsatsrv11.globoi.com
 
+```
 # dmesg
+```
 
+```
 # multipath -ll
+```
 
+```
 # systemctl status -l multipathd
+```
 
+```
 # systemctl status -l iscsid
+```
 
+```
 # rpm -qa | grep -i percona | sort
+```
 
+```
 # systemctl start mysql@bootstrap.service
+```
 
+```
 # systemctl status -l mysql@bootstrap.service
+```
 
+```
 # ps ax | grep -i mysql
-
+```
 
 gsatsrv12.globoi.com
 
+```
 # dmesg
+```
 
+```
 # multipath -ll
+```
 
+```
 # systemctl status -l multipathd
+```
 
+```
 # systemctl status -l iscsid
+```
 
+```
 # rpm -qa | grep -i percona | sort
+```
 
+```
 # systemctl start mysql
+```
 
+```
 # systemctl status -l mysql
+```
 
+```
 # ps ax | grep -i mysql
-
+```
 
 gsatsrv13.globoi.com
 
+```
 # dmesg
+```
 
+```
 # multipath -ll
+```
 
+```
 # systemctl status -l multipathd
+```
 
+```
 # systemctl status -l iscsid
+```
 
+```
 # rpm -qa | grep -i percona | sort
+```
 
+```
 # dmesg
+```
 
+```
 # systemctl start mysql
+```
 
+```
 # systemctl status -l mysql
+```
 
+```
 # ps ax | grep -i mysql
+```
 
+```
 show variables like ‘%wsrep%’;
+```
 
-
+```
 mysql> show status like 'wsrep%';
 +------------------------------+-------------------------------------------------------+
 | Variable_name                | Value                                                 |
@@ -118,6 +193,6 @@ mysql> show status like 'wsrep%';
 | wsrep_ready                  | ON                                                    
 +------------------------------+-------------------------------------------------------+
 59 rows in set (0.00 sec)
-
+```
 
 
