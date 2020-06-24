@@ -1,50 +1,50 @@
 Selinux
-´´´
+``` 
 # getenforce
-´´´
+```
+```
 # setenforce 1
-
+```
+```
 # getenforce
+```
 
+```
 # sepolicy network -t mysqld_port_t
-
-# yum -y install libsemanage
-# yum -y install policycoreutils-python
-# yum -y install setools-console
-# yum -y install policycoreutils-devel
-
+```
+```
+# yum -y install libsemanage policycoreutils-python setools-console policycoreutils-devel
+```
+```
 # sepolicy network -t mysqld_port_t
-
+```
+```
 # semanage port -m -t mysqld_port_t -p tcp 4444
-
+```
+```
 # semanage port -m -t mysqld_port_t -p tcp 4567
-
+```
+```
 # semanage port -m -t mysqld_port_t -p tcp 4568
-
+```
+```
 # semanage port -a -t mysqld_port_t -p tcp 4568
-
+```
+```
 # sepolicy network -t mysqld_port_t
-
+```
+```
 # systemctl start mysql
-
-
-
-
-
-
-
-
-
-
-
-
+```
 Firewalld
 
 
-
+```
 # firewall-cmd --permanent --get-zones
-
+```
+```
 # firewall-cmd --zone=public --list-all
+```
 
 # firewall-cmd --zone=public --permanent --add-port=3306/tcp
 # firewall-cmd --zone=public --permanent --add-port=4444/tcp
